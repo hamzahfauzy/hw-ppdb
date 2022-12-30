@@ -41,7 +41,7 @@ class Auth extends CI_Controller {
 		$this->User->update(['password'=>md5($new_password)],['id'=>1]);
 		$this->mailer->send('Admin PPDB Baitun Naim','rizkyfebry09@gmail.com','Reset Password Admin','Password Baru Anda adalah '.$new_password);
 		$this->mailer->send('Admin PPDB Baitun Naim','hamzahfauzy97@gmail.com','Reset Password Admin','Password Baru Anda adalah '.$new_password);
-		$this->whatsapp->send('082369378823','Password Baru Anda adalah '.$new_password);
+		// $this->whatsapp->send('082369378823','Password Baru Anda adalah '.$new_password);
 		$this->session->set_flashdata('reset_password', "Reset Password Berhasil! Password baru sudah dikirimkan ke email admin");
 		redirect('auth/login');
 		return;

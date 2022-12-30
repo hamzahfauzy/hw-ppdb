@@ -40,7 +40,7 @@
               <center>
                 <h2>Informasi Pendaftaran</h2>
                 <br>
-                <img src="<?=$pas_foto?>" width="150px" height="200px" style="object-fit: cover;object-position: center;">
+                <img src="<?=$pas_foto->file_url?>" width="150px" height="200px" style="object-fit: cover;object-position: center;">
                 <br>
                 <p></p>
               </center>
